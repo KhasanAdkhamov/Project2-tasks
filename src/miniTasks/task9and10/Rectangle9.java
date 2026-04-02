@@ -1,10 +1,14 @@
 package miniTasks.task9and10;
 
 public class Rectangle9 {
-    private int width;
-    private int height;
+    protected int width;
+    protected int height;
     private static int counter;
 
+    public Rectangle9() {
+        this.width = 1;
+        this.height = 1;
+    }
 
     public Rectangle9(int width, int height) {
         setWidth(width);
@@ -46,5 +50,13 @@ public class Rectangle9 {
 
     public int getHeight() {
         return height;
+    }
+
+    @Override
+    public String toString() {
+        return "Rectangle9{" +
+                "width=" + width +
+                ", height=" + height +
+                '}';
     }
 }

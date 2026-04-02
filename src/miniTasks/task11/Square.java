@@ -4,7 +4,7 @@ import miniTasks.task9and10.Rectangle9;
 
 public class Square extends Rectangle9 {
 
-    public Square(int width, int height) {
-        super(width, height);
+    public Square(int side) {
+        super(side, side);
     }
 }
